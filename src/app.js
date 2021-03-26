@@ -6,7 +6,7 @@ const geocode = require('./utils/geocoding')
 const forecast = require("./utils/forecast")
 // console.log(__dirname)
 // //console.log(__filename)
-
+const PORT = process.env.PORT || 3000
 
 // Define paths for Express Config
 const publicDir = path.join(__dirname,'../public/');
@@ -119,6 +119,8 @@ app.get('*',(req,res)=>{ //everything except above
 })
 
 
-app.listen(3000,()=>{
-    console.log('Server up and ready at 3000')
+
+
+app.listen(PORT,()=>{
+    console.log('Server up and ready at '+ PORT);
 })// http -80 default, locally we can do it 3000
