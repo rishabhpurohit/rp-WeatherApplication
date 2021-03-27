@@ -27,7 +27,7 @@ app.use(express.static(publicDir));
 
 app.get('',(req,res) => {
     res.render('index',{
-        title:"Weather",
+        title:"RoaringWIND",
         name:"Created by rp",
     });
 });
