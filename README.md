@@ -1,5 +1,5 @@
 # rp-WeatherApplication
-----------------------------------
+
 ### About
 
 This is a  weather application that shows real-time weather data of any location input by the user.
